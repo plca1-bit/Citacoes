@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AppLogin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="#">
+            <img src="https://placehold.co/40x40/ffffff/000000?text=Logo" alt="Logo" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto"> <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex me-4">
+            <a href="#" class="btn btn-outline-light rounded-pill px-4">Login</a> </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="d-flex align-items-center justify-content-center min-vh-100">
+        <div class="glassmorphism-card p-5 rounded-4 shadow-lg text-white position-relative">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 mt-3 me-3" aria-label="Close"></button>
+            
+            <h2 class="text-center mb-4">Login</h2>
+            <form id="form-login">
+                <div class="mb-3 input-group">
+                    <input type="email" class="form-control bg-transparent text-white border-white" id="emailLogin" name="email" placeholder="Email" required>
+                    <span class="input-group-text bg-transparent border-white text-white"><i class="bi bi-envelope"></i></span>
+                </div>
+                <div class="mb-3 input-group">
+                    <input type="password" class="form-control bg-transparent text-white border-white" id="passwordLogin" name="password" placeholder="Password" required>
+                    <span class="input-group-text bg-transparent border-white text-white"><i class="bi bi-lock"></i></span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input bg-transparent border-white" type="checkbox" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                            Remember me
+                        </label>
+                    </div>
+                    <a href="#" class="text-white-50">Forgot Password?</a>
+                </div>
+                <div class="d-grid gap-2 mb-3">
+                    <button type="submit" class="btn btn-light rounded-pill py-2">Login</button>
+                </div>
+                <p class="text-center mt-3 mb-0">Não tem uma conta? <a href="cadastro.html" class="text-white-50">Cadastra-se</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script> </body>
+</html>
