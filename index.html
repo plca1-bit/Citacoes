@@ -3,67 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - AppLogin</title>
+    <title>Meu Portfólio - [Pérola Lara]</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-4" href="#">
-              <img src="https://placehold.co/40x40/ffffff/000000?text=Logo" alt="Logo" class="d-inline-block align-text-top">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contato</a>
-              </li>
-            </ul>
-            <div class="d-flex me-4">
-              <a href="index.html" class="btn btn-outline-light rounded-pill px-4">Entrar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glass">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pérola Lara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
             </div>
-          </div>
         </div>
     </nav>
 
-    <div class="d-flex align-items-center justify-content-center min-vh-100">
-        <div class="glassmorphism-card p-5 rounded-4 shadow-lg text-white position-relative">
-            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 mt-3 me-3" aria-label="Fechar"></button>
-            
-            <h2 class="text-center mb-4">Registrar-se</h2>
-            <form id="form-cadastro">
-                <div class="mb-3 input-group">
-                    <input type="email" class="form-control bg-transparent text-white border-white" id="emailCadastro" name="email" placeholder="Email" required>
-                    <span class="input-group-text bg-transparent border-white text-white"><i class="bi bi-envelope"></i></span>
-                </div>
-                <div class="mb-3 input-group">
-                    <input type="password" class="form-control bg-transparent text-white border-white" id="passwordCadastro" name="password" placeholder="Senha" required>
-                    <span class="input-group-text bg-transparent border-white text-white"><i class="bi bi-lock"></i></span>
-                </div>
-                <div class="d-grid gap-2 mb-3 mt-4"> <button type="submit" class="btn btn-light rounded-pill py-2">Criar conta</button>
-                </div>
-                <p class="text-center mt-3 mb-0">Já tem uma conta? <a href="index.html" class="text-white-50">Entrar</a></p>
-            </formulário>
+    <header class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AOo0EEVxz%2FyssJfcAmFBeQFT1rvsubB5VU5JqnDlloOlBJ61tKQZZ2YfZQ3OsLAIsFGujuWJnbXiSIFt0PsYwRMxPMZj%2ByYxHPKuPrpNimnR%2FCkCRBYsl44kp80W%2Fbr9r9vvl9j3vE8Slk949G7yGW%2BFwexMP4%2F1rYhgjF10RITaIV3guRNkQ8zI2Y3GSwNSolpGgtG11FArI7rdyzAAlZz6qUiqq74NdbGdvBvyHovf2SbBEkv6SYBbVeU%2Bk1U6OgEH%2BQzTigXEAt%2BNfTxirnwNIDWXQe7NFs7i21c1Ir5i2zXgHrPhXcYx0JKJWslCtDDSuoPjzS4z0xlM7UdcGx9jGOpajXJx80n7rESuCiIqGsi5uqfvvPccitHGlDc4ZZrevgYmo%2FQMOQgW4Y0lIqIIdwBbeON2mAyTsEG3Kp%2BEPh61mX2Pb6vmP0dHpQs32XPWmJ%2FhTRZkFix8enKeGmmMf5dI3MlxTSKCZH8kSc2nSNctFlk%2B57WUvHe%2FSE9MSD0aBaRRYGrCYhpMug96tqlgZkf%2FoBoA3XYB1Ml1RhA2zVgO13ePnOvUupd2KlXNIS%2Fo4yPtdCBqt9Yz%2BpaG9pDgjKITaQ%3D%3D&allow_caching=true&sz=w512" alt="Foto de Pérola Lara" class="foto-perfil mb-4">
+            <h1 class="display-4">Pérola Lara</h1>
+            <p class="lead">Eu sou <span id="typewriter" class="typewriter-text"></span></p>
+            <div class="mt-4">
+                <a href="#projetos" class="btn btn-primary btn-lg rounded-pill px-4 m-2">Meus Projetos</a>
+                <a href="[LINK_GITHUB]" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4 m-2">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="container py-5 fade-in-section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="display-5 mb-4">Sobre Mim</h2>
+                    <p class="lead">Olá! Sou um [Seu Título] apaixonado por criar soluções e aprender novas tecnologias. Atualmente, estou focado em aprimorar minhas habilidades em desenvolvimento web...</p>
+                    <a href="https://www.linkedin.com/in/p%C3%A9rola-cardoso-6413b639b/" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
+                        <i class="bi bi-linkedin"></i> Meu LinkedIn
+                    </a>
+                </div>
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AOo0EEVxz%2FyssJfcAmFBeQFT1rvsubB5VU5JqnDlloOlBJ61tKQZZ2YfZQ3OsLAIsFGujuWJnbXiSIFt0PsYwRMxPMZj%2ByYxHPKuPrpNimnR%2FCkCRBYsl44kp80W%2Fbr9r9vvl9j3vE8Slk949G7yGW%2BFwexMP4%2F1rYhgjF10RITaIV3guRNkQ8zI2Y3GSwNSolpGgtG11FArI7rdyzAAlZz6qUiqq74NdbGdvBvyHovf2SbBEkv6SYBbVeU%2Bk1U6OgEH%2BQzTigXEAt%2BNfTxirnwNIDWXQe7NFs7i21c1Ir5i2zXgHrPhXcYx0JKJWslCtDDSuoPjzS4z0xlM7UdcGx9jGOpajXJx80n7rESuCiIqGsi5uqfvvPccitHGlDc4ZZrevgYmo%2FQMOQgW4Y0lIqIIdwBbeON2mAyTsEG3Kp%2BEPh61mX2Pb6vmP0dHpQs32XPWmJ%2FhTRZkFix8enKeGmmMf5dI3MlxTSKCZH8kSc2nSNctFlk%2B57WUvHe%2FSE9MSD0aBaRRYGrCYhpMug96tqlgZkf%2FoBoA3XYB1Ml1RhA2zVgO13ePnOvUupd2KlXNIS%2Fo4yPtdCBqt9Yz%2BpaG9pDgjKITaQ%3D%3D&allow_caching=true&sz=w512" alt="Foto ilustrativa" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="py-5 section-darker fade-in-section">
+            <div class="container">
+                <h2 class="text-center display-5 mb-5">Projetos Recentes</h2>
+                <div class="row g-4">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-card">
+                            <h3 class="card-title">AppLogin com Firebase</h3>
+                            <p class="card-text">Um app de login e cadastro com visual moderno (glassmorphism), Bootstrap 5 e autenticação real usando Firebase.</p>
+                            <div class="card-tags">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-info text-dark">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                                <span class="badge bg-danger">Firebase</span>
+                            </div>
+                            <a href="[LINK_REPO_APP_LOGIN]" target="_blank" class="btn btn-outline-light mt-4">
+                                <i class="bi bi-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-card">
+                            <h3 class="card-title">Meu Portfólio Web</h3>
+                            <p class="card-text">Meu currículo digital e portfólio de projetos, construído com HTML, CSS moderno (Dark Mode, Flexbox) e JavaScript.</p>
+                            <div class="card-tags">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-info text-dark">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                            <a href="[LINK_REPO_PORTFOLIO]" target="_blank" class="btn btn-outline-light mt-4">
+                                <i class="bi bi-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-card">
+                            <h3 class="card-title">Próximo Projeto</h3>
+                            <p class="card-text">Em breve, um novo projeto explorando [Tecnologia, ex: React ou Python] estará disponível aqui.</p>
+                            <div class="card-tags">
+                                <span class="badge bg-secondary">Em breve</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-secondary mt-4 disabled">
+                                <i class="bi bi-hourglass-split"></i> Aguarde
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="container py-5 fade-in-section">
+            <h2 class="text-center display-5 mb-5">Minhas Habilidades</h2>
+            <div class="text-center" id="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">Bootstrap 5</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">Supabase</span>
+                <span class="skill-tag">Metodologias Ágeis</span>
+                <span class="skill-tag">Design Responsivo</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato" class="text-center p-4 section-darker">
+        <p class="lead mb-3">Vamos conversar?</p>
+        <div class="mb-3">
+            <a href="mailto:seu-email@dominio.com" class="text-white-50 mx-2 fs-5">seu-email@dominio.com</a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/p%C3%A9rola-cardoso-6413b639b/" target="_blank" class="btn-social mx-2"><i class="bi bi-linkedin"></i></a>
+            <a href="[LINK_GITHUB]" target="_blank" class="btn-social mx-2"><i class="bi bi-github"></i></a>
+        </div>
+        <p class="mt-4 text-white-50">&copy; 2025 [Nome do Aluno]. Feito com <i class="bi bi-heart-fill text-danger"></i>.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
