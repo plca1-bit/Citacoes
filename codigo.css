@@ -1,0 +1,52 @@
+/* Fundo da imagem (coloque sua imagem aqui) */
+body {
+    background-image: url('back1.jpeg'); /* Sua imagem de fundo aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+    color: #fff; /* Garante que o texto padrão do body seja branco */
+}
+
+/* Estilo para o cartão com efeito "glassmorphism" */
+.glassmorphism-card {
+    background: rgba(255, 255, 255, 0.15); /* Fundo translúcido */
+    backdrop-filter: blur(10px); /* O efeito de desfoque */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+    max-width: 450px; /* Largura máxima para o card */
+    width: 90%; /* Ocupa 90% da largura disponível */
+}
+
+/* Sobrescreve alguns estilos padrão do Bootstrap para ficar com tema escuro */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important; /* Brilho ao focar */
+}
+
+.form-check-input:checked {
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.form-check-input:focus {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Ajuste para o texto dentro do input-group-text */
+.input-group-text {
+    color: #fff !important;
+}
+
+/* Estilo para o botão de fechar branco */
+.btn-close-white {
+    filter: invert(1); /* Inverte a cor do ícone do botão para branco */
+}
+
+/* Centraliza os itens da navbar */
